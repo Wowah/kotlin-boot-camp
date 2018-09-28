@@ -6,15 +6,15 @@ package io.rybalkinsd.kotlinbootcamp.assignments
  * @param values an argument. !! Assume values.length > 0. !!
  * @return the largest of values.
  */
-fun max(values: List<Int>): Int{
+fun max(values: List<Int>): Int {
     var max = values.first()
     if (values.isNotEmpty()) {
-        values.forEach{
+        values.forEach {
             if (it > max) {
                 max = it
             }
         }
-        return max;
+        return max
     }
     return 0
 }
