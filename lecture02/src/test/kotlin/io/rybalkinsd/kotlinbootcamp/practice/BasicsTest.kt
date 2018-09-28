@@ -1,10 +1,9 @@
 package io.rybalkinsd.kotlinbootcamp.practice
 
 import junit.framework.TestCase.assertEquals
-import org.junit.Ignore
+// import org.junit.Ignore
 import org.junit.Test
 
-@Ignore
 class BasicsTest {
 
     @Test

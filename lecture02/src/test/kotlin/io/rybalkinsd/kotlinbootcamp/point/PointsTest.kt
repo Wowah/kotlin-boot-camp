@@ -45,7 +45,7 @@ class PointsTest {
     fun `point # count non-zero points in list`() {
         assertEquals(
             2,
-            listOf(Point(1, 2), Point(0, 0), Point(3, 5))
+            listOf(Point(1, 2), Point(), Point(3, 5))
                 .filter { !it.isZero() }
                 .count()
         )
@@ -53,7 +53,7 @@ class PointsTest {
 
     @Test
     fun `point # symmetrical extension`() {
-        assertTrue(Point(0, 0).symmetrical() == Point(0, 0))
-        assertTrue(Point(0, 100).symmetrical() == Point(0, -100))
+        assertTrue(Point().symmetrical() == Point())
+        assertTrue(Point(y = 100).symmetrical() == Point(y = -100))
     }
 }
