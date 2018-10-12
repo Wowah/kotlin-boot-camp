@@ -8,7 +8,7 @@ class RawProfile(val rawData: String) {
         if (source == null) {
             source = "facebook"
         } else {
-            source = source.split('=')[1]
+            source = source.split('=')[1].substringBefore(',')
         }
         propList.remove(source)
         result = when (source) {
